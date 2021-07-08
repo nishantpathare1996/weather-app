@@ -2,7 +2,7 @@ import React, { useState, useContext, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import { Divider } from "@material-ui/core";
-import ZipContext from "./ZipContext";
+import ZipContext from "../ZipContext";
 import axios from "axios";
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -49,7 +49,7 @@ function TodayDetail() {
         `http://api.weatherapi.com/v1/forecast.json?key=c9d28a7e2d584ae79f7135051212605&q=60616&days=1&aqi=no&alerts=yes`
       )
       .then((res) => {
-        console.log(res.data);
+        // console.log(res.data);
         setname(res.data.location.name);
         setcountry(res.data.location.region);
         settemp(res.data.current.temp_c);

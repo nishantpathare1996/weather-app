@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from "./components/Navbar";
 import { CssBaseline } from "@material-ui/core";
 import { BrowserRouter, Route } from "react-router-dom";
-import Today from "./components/Today";
+import Today from "./components/Today/Today";
 import Hourly from "./components/Hourly";
 import Tenday from "./components/Tenday";
 import Navtabs from "./components/Navtabs";

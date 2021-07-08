@@ -6,8 +6,8 @@ import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
 import Typography from "@material-ui/core/Typography";
 import Box from "@material-ui/core/Box";
-import TodayBox from "./TodayBox";
-import Today from "./Today";
+import TodayBox from "./Today/TodayBox";
+import Today from "./Today/Today";
 import { Particles1 } from "./ParticlesComp";
 import axios from "axios";
 function TabPanel(props) {
