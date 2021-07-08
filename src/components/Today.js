@@ -2,6 +2,8 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import TodayDetail from "./TodayDetail";
 import TodayBox from "./TodayBox";
+import TodayBox1 from "./TodayBox1";
+import HourlyHome from "./HourlyHome";
 const useStyles = makeStyles(() => ({
   root: {
     flexGrow: 1,
@@ -32,10 +34,13 @@ function Today() {
   return (
     <div>
       <div className={classes.todaybox}>
-        <TodayBox />
+        <TodayBox1 />
       </div>
       <div className={classes.todaybox1}>
         <TodayDetail />
+      </div>
+      <div className={classes.todaybox1}>
+        <HourlyHome />
       </div>
     </div>
   );

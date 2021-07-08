@@ -7,7 +7,6 @@ import Hourly from "./components/Hourly";
 import Tenday from "./components/Tenday";
 import Navtabs from "./components/Navtabs";
 import ZipContext from "./components/ZipContext";
-
 function App() {
   const [zip, setzip] = useState(60616);
   const [zipcode, setzipcode] = useState(60616);
