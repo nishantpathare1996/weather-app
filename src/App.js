@@ -7,6 +7,8 @@ import Hourly from "./components/Hourly";
 import Tenday from "./components/Tenday";
 import Navtabs from "./components/Navtabs";
 import ZipContext from "./components/ZipContext";
+import { Particles1 } from "./components/ParticlesComp";
+
 function App() {
   const [zip, setzip] = useState(60616);
   const [zipcode, setzipcode] = useState(60616);
@@ -28,6 +30,17 @@ function App() {
       <ZipContext.Provider value={zipcode}>
         <Navtabs />
       </ZipContext.Provider>
+      <div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+        }}
+      >
+        <Particles1 />
+      </div>
     </div>
   );
 }

@@ -85,7 +85,6 @@ export default function SimpleTabs() {
           10 days
         </TabPanel>
       </div>
-      <Particles1 />
     </div>
   );
 }
