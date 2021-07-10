@@ -4,6 +4,7 @@ import TodayDetail from "./TodayDetail";
 import TodayBox from "./TodayBox";
 import TodayBox1 from "./TodayBox1";
 import HourlyHome from "./HourlyHome";
+import LineChart from "./LineChart";
 const useStyles = makeStyles(() => ({
   root: {
     flexGrow: 1,
@@ -41,6 +42,9 @@ function Today() {
       </div>
       <div className={classes.todaybox1}>
         <HourlyHome />
+      </div>
+      <div className={classes.todaybox1}>
+        <LineChart />
       </div>
     </div>
   );

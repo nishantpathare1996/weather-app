@@ -23,8 +23,8 @@ function HourlyHome() {
         `http://api.weatherapi.com/v1/forecast.json?key=c9d28a7e2d584ae79f7135051212605&q=60616&days=1&aqi=no&alerts=yes`
       )
       .then((res) => {
-        console.log(res.data);
-        console.log(res.data.forecast.forecastday[0].hour);
+        // console.log(res.data);
+        // console.log(res.data.forecast.forecastday[0].hour);
         setHourly(res.data.forecast.forecastday[0].hour);
       })
       .catch((err) => console.log(err));
